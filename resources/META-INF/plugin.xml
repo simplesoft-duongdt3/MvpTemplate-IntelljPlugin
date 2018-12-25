@@ -1,0 +1,36 @@
+<idea-plugin>
+  <id>tiny.apps.mvp.template.plugin</id>
+  <name>TinyApps MVP Template</name>
+  <version>1.0.0</version>
+  <vendor email="doanthanhduong11031990@gmail.com" url="https://github.com/simplesoft-duongdt3">TinyApps</vendor>
+
+  <description>Just a plugin for gen MVP template, feel free give me some feedback.</description>
+
+  <change-notes>Just a plugin for gen MVP template, feel free give me some feedback.</change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <group id="MVPTemplate.DemoMenu" text="_Demo menu" description="Demo menu">
+      <add-to-group group-id="MainMenu" anchor="last"  />
+      <action id="MVPTemplate.DemoAction" class="DemoAction" text="Demo Action dialog" description="A test menu item" />
+    </group>
+
+    <group id="MVPTemplate.DemoNewMenu" text="_Demo menu" description="Demo menu">
+      <add-to-group group-id="NewGroup" anchor="first"/>
+      <action id="MVPTemplate.DemoMenuAuto" class="DemoMenuAuto" text="DemoMenuAuto" description="DemoMenuAuto Desc" />
+    </group>
+  </actions>
+
+</idea-plugin>
